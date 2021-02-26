@@ -61,8 +61,8 @@ class TrainSpacy():
         modelfile = 'New_web_lg'
         self.nlp.to_disk(modelfile)
 
-    def TestExample(self,"Sentence "):
-        doc = self.nlp("Follow-up with Scott and Thishan on the call recording for the call centre")
+    def TestExample(self,Sentence):
+        doc = self.nlp(Sentence)
         print(doc)
         for ent in doc.ents:
             print(ent.text, ent.label_)
